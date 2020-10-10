@@ -12,13 +12,13 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                              <a class="nav-link" href="#" style="color: white;">TODAY <span class="sr-only">(current)</span></a>
+                              <a class="nav-link" href="#today" style="color: white;">TODAY <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#"  style="color: white;">HOURLY</a>
+                              <a class="nav-link" href="#hourly" style="color: white;">HOURLY</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"  style="color: white;">TOMMOROW</a>
+                                <a class="nav-link" href="#forecast" style="color: white;">FORECAST</a>
                               </li>
                           </ul>
                         </div>
@@ -51,7 +51,7 @@
                     <div class="d-flex flex-row">
                         <div class="flexbox">
                             <div class="p-2">
-                                <div class="card">
+                                <div class="card" id="today">
                                     <div class="card-body">
                                         <h2 style="text-align: center; font-weight: bold;">Today's Weather</h2>
                                         <div class="d-flex flex-column">
@@ -160,7 +160,7 @@
                     <div class="d-flex flex-row">
                         <div class="flexbox">
                             <div class="p-2">
-                                <div class="card">
+                                <div class="card" id="hourly">
                                     <div class="card-body">
                                         <h2 style="text-align: center; font-weight: bold;">Hourly Forecast</h2>
                                         <h3 style="margin-top: 10px; margin-bottom: 10px; text-align: center;">{{this.currentData?.name}}, {{this.currentData?.sys.country}}</h3>  
@@ -187,7 +187,7 @@
                         </div>
                         <div class="flexbox">
                             <div class="p-2">
-                                <div class="card">
+                                <div class="card" id="future">
                                     <div class="card-body">
                                         <h2 style="text-align: center; font-weight: bold;">Future's Forecast</h2>
                                         <h3 style="margin-top: 10px; margin-bottom: 10px; text-align: center;">{{this.currentData?.name}}, {{this.currentData?.sys.country}}</h3>  
@@ -215,11 +215,6 @@
                     </div>
                 </div>
             </div>
-<!-- 
-            <div *ngFor="let city of cityList">
-                <p>{{city.name}}, {{city.country}}</p>
-            </div> -->
-
         </main>
     </body>
 </html>
