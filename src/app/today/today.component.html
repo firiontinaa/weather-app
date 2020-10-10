@@ -118,11 +118,42 @@
                         </div>
                         <div class="flexbox">
                             <div class="p-2">
-
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column">
+                                            <div class="p-2">
+                                                <div class="d-flex flex-row">
+                                                    <div class="p-2">
+                                                        <img src="assets/img/article.jpg" style="width: 100%; display: block; margin: auto;">
+                                                    </div>
+                                                    <div class="p-2">
+                                                        <h3 style="text-align: left; font-weight: bold; margin: 20px 0px 0px 0px;">October 2020: The Next Full Moon is the Harvest Moon</h3>
+                                                        <p style="margin: 10px 0">By Gordon Johnston</p>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2">
+                                                    <p style="text-align: justify; margin-top: 10px;">The next full Moon will be on Thursday afternoon, Oct. 1, 2020, appearing "opposite" the Sun (in Earth-based longitude) at 5:05 p.m. EDT. 
+                                                        The Moon will appear full for about three days around this time, from Wednesday morning through Saturday morning.
+                                                        As the full Moon closest to the autumnal equinox (the end of summer and start of fall), this is the Harvest Moon. 
+                                                        During the harvest season farmers sometimes need to work late into the night by the light of the Moon. 
+                                                        The full Moon rises an average of 50 minutes later each night, but for the few nights around the Harvest Moon, 
+                                                        the Moon seems to rise at nearly the same time: just 25 to 30 minutes later across the northern USA, and only 10 to 20 minutes later farther north in Canada and Europe. 
+                                                        The Harvest Moon is an old European name with the Oxford English Dictionary giving 1706 as the year of its first published use. 
+                                                        Most years the Harvest Moon falls in September but this is one of the years it falls in October.
+                                                    </p>
+                                                    <br>
+                                                    <br>
+                                                    <p>
+                                                        Sources: Nasa Science Solar System Exploration
+                                                    </p>
+                                                    <a href="https://solarsystem.nasa.gov/news/1520/october-2020-the-next-full-moon-is-the-harvest-moon/">>>>Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        
                     </div>
                 </div>
                 <div class="p-2">
@@ -132,6 +163,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h2 style="text-align: center; font-weight: bold;">Hourly Forecast</h2>
+                                        <h3 style="margin-top: 10px; margin-bottom: 10px; text-align: center;">{{this.currentData?.name}}, {{this.currentData?.sys.country}}</h3>  
                                         <table class="table">
                                             <tbody *ngFor="let hourly of hourlyData | slice:0:8">
                                                 <tr>
@@ -157,7 +189,8 @@
                             <div class="p-2">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h2 style="text-align: center; font-weight: bold;">Tommorow's Forecast</h2>
+                                        <h2 style="text-align: center; font-weight: bold;">Future's Forecast</h2>
+                                        <h3 style="margin-top: 10px; margin-bottom: 10px; text-align: center;">{{this.currentData?.name}}, {{this.currentData?.sys.country}}</h3>  
                                         <table class="table">
                                             <tbody *ngFor="let hourly of hourlyData | slice:8:16">
                                                 <tr>

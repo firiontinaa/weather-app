@@ -63,7 +63,7 @@ export class TodayComponent implements OnInit {
       this.nextData = res;
       this.hourlyData = this.nextData.list;
 
-      // console.log(this.nextData);
+      console.log(this.hourlyData);
     });
   }
 
@@ -71,7 +71,7 @@ export class TodayComponent implements OnInit {
     this.weatherService.getCityList().subscribe((res) => {
       this.cityList = res;
 
-      console.log(res);
+      console.log(this.cityList);
     });
   }
 }

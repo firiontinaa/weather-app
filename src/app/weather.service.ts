@@ -51,7 +51,7 @@ export class WeatherService {
     return this.http.get(`${this.url}/forecast`, { params });
   }
 
-  public getCityList(): Observable<any> {
+  getCityList(): Observable<any> {
     return this.http.get('./assets/city.list.json');
   }
 }
